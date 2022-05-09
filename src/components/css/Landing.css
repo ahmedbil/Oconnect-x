@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.navbar {
+  margin-bottom: 10px;
+}
+
+.navbarHeader a {
+  font-size: 90%;
+  text-decoration: none;
+  font-weight: 500;
+  color: #1970e1;
+  margin-top: 0.8vw;
+  margin-right: 1.3vw;
+  padding-right: 1.5vw;
+  padding-top: 0.8vh;
+  float: right;
+}
+
+.navbarHeader a:hover {
+  color: #1970e1;
+  text-decoration: underline;
+}
+
+.navbar {
+  background-color: #fffdfd;
+}
+
+.landingHeader {
+  background-color: white;
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.landingHeader h1 {
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  color: black;
+  font-size: 60px;
+  text-align: center;
+}
+
+.landingHeader span {
+  font-family: Roboto, sans-serif;
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  margin: 10px;
+}
+
+.phoneWebLanding {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  max-width: auto;
+  height: 500px;
+  margin-top: 40px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.demoButton {
+  cursor: pointer;
+  margin: 10px;
+  height: auto;
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  color: #fafafa;
+  padding-inline: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: transparent;
+  border: solid 2px white;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.getStartedButton {
+  cursor: pointer;
+  margin: 10px;
+  height: auto;
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  color: #fafafa;
+  padding-inline: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #ec6d51;
+  border: solid 2px #ec6d51;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.demoButton:hover {
+  box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.getStartedButton:hover {
+  box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.homeContent {
+  padding-top: 50px;
+  padding-left: 150px;
+  padding-right: 150px;
+  width: 100vw;
+  height: auto;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+}
+
+.homeContent h1 {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.homeContent p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.005em;
+  text-align: left;
+}
+
+.homeContent a {
+  color: #076df2;
+  cursor: pointer;
+}
+
+.homeContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeContainer-phoneModel {
+  height: 520px;
+  display: flex;
+  justify-content: baseline;
+}
+
+.bottomContainer {
+  margin: 50px 0px 50px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottomCardContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0px;
+  row-gap: 8px;
+  width: fit-content;
+}
+
+@media only screen and (max-width: 980px) {
+  .bottomCardContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .homeContainer {
+    flex-direction: column;
+  }
+
+  .homeContainer-phoneModel {
+    margin-bottom: 20px;
+  }
+}
+
+/*Responsiveness for Mobile - L*/
+@media only screen and (max-width: 600px) {
+  .homeContent {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .homeContent h1 {
+    font-size: 40px;
+  }
+
+  .phoneWebLanding {
+    margin-top: 20px;
+    max-width: auto;
+    height: 300px;
+  }
+}
+
+/*Responsiveness for Mobile - L*/
+@media only screen and (max-width: 495px) {
+  .phoneWebLanding {
+    height: 200px;
+  }
+
+  .homeContainer-phoneModel {
+    height: 400px;
+  }
+}

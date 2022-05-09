@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.body {
+  background-color: #fffdfd;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.logout {
+  float: right;
+  margin-top: 19px;
+  font-weight: 500;
+  font-size: 80%;
+  background: 0;
+  border: 0;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.logoutDashboard {
+  font-weight: 500;
+  font-size: 80%;
+  background: 0;
+  border: 0;
+  cursor: pointer;
+  color: #4b4b4b;
+}
+
+.logout:hover {
+  color: #e9a800;
+}
+
+.logoutDashboard:hover {
+  color: #e9a800;
+}
+
+.welcome {
+  float: right;
+  margin-top: 20px;
+  margin-right: 60px;
+  font-weight: 500;
+  font-size: 80%;
+}
+
+.backgroundimg {
+  z-index: 2;
+  padding-top: 50px;
+  margin: auto;
+  width: 80vw;
+  max-width: 1146px;
+  height: auto;
+  display: block;
+  background-color: #fffdfd;
+}
+
+.slogan {
+  position: absolute;
+  z-index: 1;
+  font-size: 5vw;
+  font-weight: 300;
+  text-align: center;
+  top: 20vh;
+  left: 37%;
+  margin-left: -28px;
+  margin-top: -25px;
+}
+
+.slogansub {
+  margin-top: 18px;
+  font-size: 1.4vw;
+  font-weight: 400;
+}
+
+.getStarted {
+  border: 0;
+  width: 8vw;
+  height: 2.35vw;
+  left: 626px;
+  top: 419px;
+  background: #ffba16;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16%;
+  line-height: 2.35vw;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.getStarted:hover {
+  background: #ffc236;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-name {
+  float: left;
+  font-weight: 500;
+  font-size: 100%;
+  margin-left: 20px;
+  margin-top: 19px;
+}
+
+.infocard {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  background: white;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 13px;
+}
+
+.infocardtext {
+  display: inline-block;
+  width: 250px;
+  height: 70px;
+  background: none;
+  margin: auto;
+  border-radius: 15px;
+  margin-right: 13px;
+  color: #4b4b4b;
+  font-size: 90%;
+  margin-top: 20px;
+}
+
+.infocardimg {
+  display: block;
+  padding-top: 28px;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+}
+
+.info {
+  margin-top: 200px;
+  text-align: center;
+}
+
+.info2 {
+  margin-top: 300px;
+  text-align: center;
+}
+
+.infotext {
+  margin-bottom: 30px;
+  font-size: 25px;
+  color: #4b4b4b;
+  font-weight: bold;
+}
+
+.chatbutton {
+  margin-top: 28px;
+  background-color: #e9a800;
+  border-radius: 30px;
+  height: 45px;
+  width: 105px;
+  border: none;
+  font-weight: bold;
+  color: white;
+  font-size: 15px;
+}
+
+.chatbutton:hover {
+  cursor: pointer;
+}
+
+.helpbutton {
+  margin-top: 35px;
+  margin-right: 40px;
+  background-color: #e9a800;
+  border-radius: 30px;
+  height: 45px;
+  width: 105px;
+  border: none;
+  font-weight: bold;
+  color: white;
+  font-size: 15px;
+  float: right;
+}
+
+.helpbutton:hover {
+  cursor: pointer;
+}
+
+.mentorbutton {
+  margin-top: 28px;
+  background-color: #4200ad;
+  border-radius: 30px;
+  height: 45px;
+  width: 105px;
+  border: none;
+  font-weight: bold;
+  color: white;
+  font-size: 15px;
+}
+
+.mentorbutton:hover {
+  cursor: pointer;
+}
+
+.plant {
+  margin-top: -70px;
+  margin-left: -1px;
+  height: 400px;
+  width: 250px;
+}
+
+.person {
+  max-width: 100%;
+  height: auto;
+  margin-top: -70px;
+  margin-left: 200px;
+}

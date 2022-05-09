@@ -1,0 +1,62 @@
+.customGoogleButton {
+    display: block;
+    width: 90%;
+    border: 1px solid #1970E1;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 15px 45px 10px 45px;
+    margin: 5% 54%;
+    background-color: #FFFFFF;
+}
+.customGoogleButtonLogin {
+    display: block;
+    width: 70%;
+    border: 1px solid #1970E1;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 15px 45px 10px 45px;
+    margin: 10% 15%;
+    background-color: #FFFFFF;
+}
+.customGoogleButton:hover {
+    cursor: pointer;
+    opacity: 0.6;
+    border: 2px solid #1970E1;
+}
+.customGoogleButtonLogin:hover {
+    cursor: pointer;
+    opacity: 0.6;
+    border: 2px solid #1970E1;
+}
+
+
+.buttonIcons {
+    float: right;
+    width: 9%;
+}
+
+.vertical-center {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    
+}
+@media (max-width:700px)  {
+    .buttonIcons {
+        float: right;
+        width: 10%;
+    }
+    .customGoogleButton {
+        width:300%;
+        font-size: 4.5vw;
+        padding: 25px;
+        margin: 20% 50%;
+        
+    }
+    .vertical-center {
+        width: 25%;
+        
+    }
+}

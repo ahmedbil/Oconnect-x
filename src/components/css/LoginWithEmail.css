@@ -1,0 +1,105 @@
+.login-content{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.login-img {
+    margin-left: 120px;
+    margin-top: 20px;
+}
+  
+
+.welcome-back{
+    flex: 1;
+    background-color: #FFFFFF;    
+}
+
+.input-container{
+    flex: 1;
+    background-color: white;
+}
+
+.email-login-input{
+    width: 50vw;
+    position: fixed;
+    top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.email-input-form{
+    padding-top: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.input-field {
+    width: 25vw;
+    font-size: 1.5vw;
+    padding-top: 4vh;
+   
+}
+
+.email-input-box{ 
+    width: 25vw;
+    height: 2.5vw;
+    font-size: 1vw;
+    padding: 3%;
+    color: black;
+    box-sizing: border-box;
+    border: 0.1vw solid #B7B7B7;
+    border-radius: 0.5vw;
+}
+
+.forgot-password {
+    width: 25vw;
+    padding: 2vh 0 4vh 0;
+    text-align: right;
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.1vw;
+    color: #000000;
+    cursor: pointer;
+}
+
+.forgot-password:hover{
+    color: #1970E1;
+    transition: ease-in 0.3s;
+}
+
+.login-button {
+    width: 10vw;
+    height: 3vw;
+    font-size: 1.4vw;
+    color: white;
+    background: #1970E1;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    cursor: pointer;
+    background: white;
+    color: #1970E1;
+    border: 0.2vw solid #1970E1;
+    border-radius: 50px;
+    transition: ease-in all 0.3s;
+    
+}
+
+.no-account-email{
+    padding-top: 7vh;
+}
+
+.sign-up-button {
+    font-weight: bold;
+    text-decoration: white;
+    color: #1970E1!important;
+}

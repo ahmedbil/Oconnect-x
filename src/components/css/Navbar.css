@@ -1,0 +1,139 @@
+.navbar {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  font-family: Poppins, sans-serif;
+  width: 100vw;
+  max-width: 100vw;
+  height: 120px;
+  margin: 0;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  max-width: 100vw;
+}
+
+.navbar-extras {
+  width: 100vw;
+  height: 120px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-logo-container {
+  height: 120px;
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 60px;
+  /*margin: 3.2vh 0 3vh 2vw;*/
+}
+.navbar-logo-container:hover {
+  opacity: 0.7;
+}
+
+.navbar-logo-container img {
+  width: 240px;
+}
+
+.navbar-content {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 80vw;
+  justify-content: end;
+  margin-right: 2rem;
+}
+
+.nav-item {
+  height: 100%;
+}
+
+.nav-links-blue {
+  color: #1970e1;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  font-weight: 500;
+  font-size: 1.3em;
+  line-height: 130%;
+}
+
+.nav-links-blue:hover {
+  transition: transform .2s;
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+
+.active {
+  color: #ec6d51;
+  text-decoration: underline;     
+}
+
+@media screen and (max-width: 1100px) {
+  .navbar {
+    height: 80px;
+  }
+
+  .navbar-container {
+    height: 80px;
+  }
+
+  .navbar-extras {
+    height: 80px;
+    z-index: 5;
+  }
+
+  .navbar-logo-container {
+    height: 80px;
+    width: 80px;
+    margin-left: 20px;
+  }
+
+  .navbar-logo-container img {
+    width: 50%;
+  }
+  .navbar-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    left: -100%;
+    position: absolute;
+    opacity: 1;
+    transition: all 0.5s ease;
+    margin-top: 0;
+  }
+  .nav-item {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-links-blue {
+    color: #1970e1;
+    display: flex;
+    text-decoration: none;
+    padding: 0;
+    height: 100%;
+    font-weight: 600;
+    font-size: 3vh;
+    line-height: 130%;
+  }
+}

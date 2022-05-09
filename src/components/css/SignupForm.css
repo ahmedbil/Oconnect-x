@@ -1,0 +1,77 @@
+.emailLine {
+    position: fixed;
+    width: 26vw;
+    height: 0px;
+    right: 10%;
+    top: 39%;
+    border: 1px solid #000000;
+    transform: rotate(0.19deg);
+}
+
+.passwordInput {
+    position: fixed;
+    width: 26vw;
+    height: 0px;
+    right: 10%;
+    top: 39%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 130%;
+    color: #8D8D8D;
+}
+
+.confirmPasswordInput {
+    position: fixed;
+    width: 26vw;
+    height: 0px;
+    right: 10%;
+    top: 51%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 130%;
+    color: #8D8D8D;
+}
+
+
+.allInput {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 130%;
+    color: #8D8D8D;
+    width: 50%;
+    margin: 5% 25%;
+}
+
+.nickInput {
+    
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 130%;
+    color: #8D8D8D;
+}
+
+.signup-input {
+    border: 1px solid #B7B7B7;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 100%;
+    padding: 3%;
+    background: transparent;
+    font-size: 1vw;
+    color: black;
+}
+
+label {
+    padding: 1%;
+    color: #4B4B4B;
+    font-family: sans-serif;
+    text-align: left;
+}
