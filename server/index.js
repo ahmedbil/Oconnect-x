@@ -7,7 +7,7 @@ const User = require("./models/users.model");
 
 const app = express()
 const port = 5000
-app.listen(port, () => {
+const server = app.listen(port, () => {
   console.log(`App is listening at http://localhost:${port}`)
 })
 
@@ -41,4 +41,6 @@ mongoose.connect(url,connectionParams)
     })
     .catch( (err) => {
         console.error(`Error connecting to the database. \n${err}`);
-    })
+    });
+    
+module.exports = {server : server};

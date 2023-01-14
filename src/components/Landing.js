@@ -31,7 +31,7 @@ export default function Landing() {
       <Navbar/>
         <div className="landingHeader fade">
           <h1>OCONNECT-X</h1>
-          <span>STAY CONNECTED WITH WORLD AND WORK</span>
+          <span>STAY CONNECTED</span>
           <div className="buttonContainer">
             <button onClick={getStarted} className="getStartedButton">GET STARTED</button>
           </div>

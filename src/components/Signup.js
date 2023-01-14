@@ -31,18 +31,19 @@ export default function Signup() {
     }
     
       const newUser = {
-        username: username,
+        name: username,
         password: password,
         email: email,
         avi: avi,
       };
+      console.log(newUser);
   
       setUsername("");
       setConfirmPassword("");
       setPassword("");
       setEmail("");
       setAvi("01");
-      axios.post("http://localhost:5000/users/add", newUser).then((res) => {
+      axios.post("http://localhost:5000/users/signup", newUser).then((res) => {
           console.log("what");
         if (res.data === "User added!") {
             toast.success("You have successfully been signed up!");

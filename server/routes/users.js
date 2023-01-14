@@ -139,15 +139,15 @@ router.route("/").get((req, res) => {
     });
 });
 */
-router.route("/add").post(async (req, res) => {
+router.route("/signup").post(async (req, res) => {
   const salt = 10;
-  const username = req.body.username;
+  const name = req.body.name;
   const password = await Bcrypt.hash(req.body.password, salt);
   const email = req.body.email;
   const avi = Number(req.body.avi);
 
   const newUser = new User({
-    username,
+    name,
     password,
     email,
     avi,
@@ -159,12 +159,28 @@ router.route("/add").post(async (req, res) => {
     .catch((err) => res.status(400).json("Error: " + err));
 });
 
+//router.route("/friends/:id").post(async (req, res) => {
+//  await User.findById(req.params.id)
+//  .then((user) => {
+//    res.status(200).json(user.friends);
+//  })
+//  .catch((err) => res.status(400).json("Error: " + err));
+//});
+//
+//router.route("/addFriend/:id").post(async (req, res) => {
+//  await User.findById(req.params.id)
+//  .then((user) => {
+//    await User.findByID
+//    res.status(200).json(user.friends);
+//  })
+//  .catch((err) => res.status(400).json("Error: " + err));
+//});
+
 async function generateAccessToken(user) {
   return jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, { expiresIn: '15s' });
 }
 
 router.route("/login").post(async (req, res) => {
-  console.log("login");
   const user = await User.findOne({ email: req.body.email });
   if (user === null) {
     return res.status(400).send("Cannot find user");
@@ -186,6 +202,7 @@ router.route("/login").post(async (req, res) => {
       path: '/',
       httpOnly: true
     });*/
+    //console.log(user);
     res.json({ user });
   } catch (err) {
     res.status(500).send();
@@ -207,5 +224,13 @@ router.route("/auth/login").post(async (req, res) => {
     res.json({ user });
   }   
   });
+
+  router.route("/userNames").get(async (req, res) => {
+    await User.find()
+    .then((users) => {
+      res.json(users)
+    })
+    .catch((err) => res.json(err))
+  })
 
 module.exports = router;

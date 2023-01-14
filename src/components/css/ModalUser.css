@@ -1,0 +1,59 @@
+/* 
+==============
+Global Styling
+==============
+*/
+
+/* 
+==============
+Layout
+==============
+*/
+
+.user-content {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 1rem;
+    border: none;
+    background-color: #1970E1;
+    color: #fff;
+}
+.selected {
+    opacity: 30%;
+    text-decoration: none;
+}
+.user-profile-pic {
+    width: 33px;
+    height: 33px;
+}
+
+.username {
+    margin-left: .75rem;
+}
+
+/* 
+==============
+Typography
+==============
+*/
+
+.username {
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: var(--clr-text);
+}
+
+/* 
+==============
+Components
+==============
+*/
+
+.user-content:hover {
+    cursor: pointer;
+
+    transform: scale(1.025);
+    transition: all 0.2s ease-out;
+}

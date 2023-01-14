@@ -44,7 +44,7 @@ export default function LoginWithEmail() {
             type: "CHANGE_USER_ALL",
             user: {
               loggedIn: true,
-              username: res.data.user.username,
+              username: res.data.user.name,
               email: res.data.user.email,
               _id: res.data.user._id,
               bio: res.data.user.bio,
